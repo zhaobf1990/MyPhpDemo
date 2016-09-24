@@ -25,6 +25,3 @@
 
 
 
-vec = [2, 4, 6]
-list=[3 * x for x in vec]
-print(list)
