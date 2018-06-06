@@ -6,7 +6,7 @@ import re
 
 with open('article') as file1:  ##  打开文本文件
     str = file1.read().replace("\n", " ")
-    str1 = re.split(' |,|/|-|\.|\)|\(|=|_|<|>|#|\?', str)  # 将文章按照空格划分开
+    str1 = re.split(' |,|/|-|\.|\)|\(|=|_|<|>|#|\?|\\t', str)  # 将文章按照空格划分开
 
 # print "原文本:\n %s" % str1
 
@@ -23,6 +23,7 @@ dirs = counter.items()
 
 result = sorted(dirs, key=lambda item: item[1])
 
-
 result.reverse()
-print  result
+# print  result
+for a in result:
+    print  a

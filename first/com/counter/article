@@ -917,3 +917,1408 @@ Submit Website Bug
 
 Status
 Copyright ©2001-2017.  Python Software Foundation  Legal Statements  Privacy Policy
+Apache > Hadoop >
+Apache Hadoop
+
+Search with Apache Solr
+   Search
+TopWiki
+Last Published: 10/28/2017 06:03:27
+
+About
+Welcome
+What Is Apache Hado...
+Getting Started ...
+Download Hadoop
+Who Uses Hadoop?...
+News
+Releases
+Release Versioning
+Mailing Lists
+Issue Tracking
+Who We Are?
+Who Uses Hadoop?
+Buy Stuff
+Sponsorship
+Thanks
+Privacy Policy
+Bylaws
+Committer criteria
+License
+Documentation
+Related Projects
+Built with Apache Forrest - logo
+
+PDF -icon
+PDF
+Welcome to Apache™ Hadoop®!
+What Is Apache Hadoop?
+The Apache™ Hadoop® project develops open-source software for reliable, scalable, distributed computing.
+
+The Apache Hadoop software library is a framework that allows for the distributed processing of large data sets across clusters of computers using simple programming models. It is designed to scale up from single servers to thousands of machines, each offering local computation and storage. Rather than rely on hardware to deliver high-availability, the library itself is designed to detect and handle failures at the application layer, so delivering a highly-available service on top of a cluster of computers, each of which may be prone to failures.
+
+The project includes these modules:
+
+Hadoop Common: The common utilities that support the other Hadoop modules.
+Hadoop Distributed File System (HDFS™): A distributed file system that provides high-throughput access to application data.
+Hadoop YARN: A framework for job scheduling and cluster resource management.
+Hadoop MapReduce: A YARN-based system for parallel processing of large data sets.
+Other Hadoop-related projects at Apache include:
+
+Ambari™: A web-based tool for provisioning, managing, and monitoring Apache Hadoop clusters which includes support for Hadoop HDFS, Hadoop MapReduce, Hive, HCatalog, HBase, ZooKeeper, Oozie, Pig and Sqoop. Ambari also provides a dashboard for viewing cluster health such as heatmaps and ability to view MapReduce, Pig and Hive applications visually alongwith features to diagnose their performance characteristics in a user-friendly manner.
+Avro™: A data serialization system.
+Cassandra™: A scalable multi-master database with no single points of failure.
+Chukwa™: A data collection system for managing large distributed systems.
+HBase™: A scalable, distributed database that supports structured data storage for large tables.
+Hive™: A data warehouse infrastructure that provides data summarization and ad hoc querying.
+Mahout™: A Scalable machine learning and data mining library.
+Pig™: A high-level data-flow language and execution framework for parallel computation.
+Spark™: A fast and general compute engine for Hadoop data. Spark provides a simple and expressive programming model that supports a wide range of applications, including ETL, machine learning, stream processing, and graph computation.
+Tez™: A generalized data-flow programming framework, built on Hadoop YARN, which provides a powerful and flexible engine to execute an arbitrary DAG of tasks to process data for both batch and interactive use-cases. Tez is being adopted by Hive™, Pig™ and other frameworks in the Hadoop ecosystem, and also by other commercial software (e.g. ETL tools), to replace Hadoop™ MapReduce as the underlying execution engine.
+ZooKeeper™: A high-performance coordination service for distributed applications.
+Getting Started
+To get started, begin here:
+
+Learn about Hadoop by reading the documentation.
+Download Hadoop from the release page.
+Discuss Hadoop on the mailing list.
+Download Hadoop
+Please head to the releases page to download a release of Apache Hadoop.
+
+Who Uses Hadoop?
+A wide variety of companies and organizations use Hadoop for both research and production. Users are encouraged to add themselves to the Hadoop PoweredBy wiki page.
+
+News
+24 October 2017: Release 2.8.2 available
+This is the first GA release in the 2.8 release line. It contains 315 bug fixes, improvments and other enhancements since 2.8.1. For major features and improvements for Apache Hadoop 2.8, please refer: overview of major changes. For details of 315 fixes, improvements, and other enhancements since the previous 2.8.1 release, please check: release notes and changelog
+
+03 October 2017: Release 3.0.0-beta1 available
+This is the first beta release in the 3.0.0 release line. It consists of 576 bug fixes, improvements, and other enhancements since 3.0.0-alpha4. This is planned to be the final alpha release, with the next release being 3.0.0 GA.
+
+Please note that beta releases are API stable but come with no guarantees of quality, and are not intended for production use.
+
+Users are encouraged to read the overview of major changes coming in 3.0.0. The beta1 release notes and changelog detail the changes since 3.0.0-alpha4.
+
+04 August, 2017: Release 2.7.4 available
+This is the next release of Apache Hadoop 2.7 line.
+
+Please see the Hadoop 2.7.4 Release Notes for the list of 264 bugs fixes and optimizations since the previous release 2.7.3.
+
+07 July, 2017: Release 3.0.0-alpha4 available
+This is the fourth alpha release in the 3.0.0 release line. It consists of 814 bug fixes, improvements, and other enhancements since 3.0.0-alpha3. This is planned to be the final alpha release, with the next release being 3.0.0-beta1.
+
+Please note that alpha releases come with no guarantees of quality or API stability, and are not intended for production use.
+
+Users are encouraged to read the overview of major changes coming in 3.0.0. The alpha4 release notes and changelog detail the changes since 3.0.0-alpha3.
+
+08 June, 2017: Release 2.8.1 available
+This is a security release in the 2.8.0 release line. It consists of 2.8.0 plus security fixes. Users on 2.8.0 are encouraged to upgrade to 2.8.1.
+
+Please note that 2.8.x release line continues to be not yet ready for production use. Critical issues are being ironed out via testing and downstream adoption. Production users should wait for a subsequent release in the 2.8.x line.
+
+26 May, 2017: Release 3.0.0-alpha3 available
+This is a security release in the 3.0.0 release line. It consists of alpha2 plus security fixes, along with necessary build-related fixes. Users on 3.0.0-alpha1 and 3.0.0-alpha2 are encouraged to upgrade to 3.0.0-alpha3.
+
+Please note that alpha releases come with no guarantees of quality or API stability, and are not intended for production use.
+
+Users are encouraged to read the overview of major changes coming in 3.0.0. The alpha3 release notes and changelog detail the changes since 3.0.0-alpha2.
+
+22 March 2017: Release 2.8.0 available
+Apache Hadoop 2.8.0 contains a number of significant features and enhancements. For major features and improvements, please refer: overview of major changes coming in 2.8.0. For details of 2917 fixes, improvements, and new features since the previous 2.7.0 release, please check: release notes and changelog
+
+Please note that this release is not yet ready for production use. Critical issues are being ironed out via testing and downstream adoption. Production users should wait for a 2.8.1/2.8.2 release.
+
+25 January, 2017: Release 3.0.0-alpha2 available
+This is the second alpha in a series of planned alphas and betas leading up to a 3.0.0 GA release. The intention is to "release early, release often" to quickly iterate on feedback collected from downstream users.
+
+Please note that alpha releases come with no guarantees of quality or API stability, and are not intended for production use.
+
+Users are encouraged to read the overview of major changes coming in 3.0.0. The alpha2 release notes and changelog detail 857 fixes, improvements, and new features since the previous 3.0.0-alpha1 release.
+
+08 October, 2016: Release 2.6.5 available
+A point release for the 2.6 line.
+
+Please see the Hadoop 2.6.5 Release Notes for the list of 79 critical bug fixes and since the previous release 2.6.4.
+
+03 September, 2016: Release 3.0.0-alpha1 available
+This is the first alpha in a series of planned alphas and betas leading up to a 3.0.0 GA release. The intention is to "release early, release often" to quickly iterate on feedback collected from downstream users.
+
+Please note that alpha releases come with no guarantees of quality or API stability, and are not intended for production use.
+
+Users are encouraged to read the overview of major changes coming in 3.0.0. The full set of release notes and changelog detail all the changes since the previous minor release 2.7.0.
+
+25 August, 2016: Release 2.7.3 available
+A point release for the 2.7 line.
+
+Please see the Hadoop 2.7.3 Release Notes for the list of 221 bug fixes and patches since the previous release 2.7.2.
+
+11 February, 2016: Release 2.6.4 available
+A point release for the 2.6 line.
+
+Please see the Hadoop 2.6.4 Release Notes for the list of 46 critical bug fixes and since the previous release 2.6.3.
+
+25 January, 2016: Release 2.7.2 (stable) available
+A point release for the 2.7 line.
+
+Please see the Hadoop 2.7.2 Release Notes for the list of 155 bug fixes and patches since the previous release 2.7.1.
+
+17 December, 2015: Release 2.6.3 available
+A point release for the 2.6 line.
+
+Please see the Hadoop 2.6.3 Release Notes for the list of 35 critical bug fixes and since the previous release 2.6.2.
+
+28 October, 2015: Release 2.6.2 available
+A point release for the 2.6 line.
+
+Please see the Hadoop 2.6.2 Release Notes for the list of 15 critical bug fixes and since the previous release 2.6.1.
+
+23 September, 2015: Release 2.6.1 available
+A point release for the 2.6 line.
+
+Please see the Hadoop 2.6.1 Release Notes for the list of 158 critical bug fixes and since the previous release 2.6.0.
+
+06 July, 2015: Release 2.7.1 (stable) available
+A point release for the 2.7 line. This release is now considered stable.
+
+Please see the Hadoop 2.7.1 Release Notes for the list of 131 bug fixes and patches since the previous release 2.7.0. Please look at the 2.7.0 section below for the list of enhancements enabled by this first stable release of 2.7.x.
+
+21 April 2015: Release 2.7.0 available
+Apache Hadoop 2.7.0 contains a number of significant enhancements. A few of them are noted below.
+
+IMPORTANT notes
+This release drops support for JDK6 runtime and works with JDK 7+ only.
+This release is not yet ready for production use. Critical issues are being ironed out via testing and downstream adoption. Production users should wait for a 2.7.1/2.7.2 release.
+Hadoop Common
+Support Windows Azure Storage - Blob as a file system in Hadoop.
+Hadoop HDFS
+Support for file truncate
+Support for quotas per storage type
+Support for files with variable-length blocks
+Hadoop YARN
+Make YARN authorization pluggable
+Automatic shared, global caching of YARN localized resources (beta)
+Hadoop MapReduce
+Ability to limit running Map/Reduce tasks of a job
+Speed up FileOutputCommitter for very large jobs with many output files.
+Full information about this milestone release is available at Hadoop Releases.
+
+18 November, 2014: release 2.6.0 available
+Apache Hadoop 2.6.0 contains a number of significant enhancements such as:
+
+Hadoop Common
+Key management server (beta)
+Credential provider (beta)
+Hadoop HDFS
+Heterogeneous Storage Tiers - Phase 2
+Application APIs for heterogeneous storage
+SSD storage tier
+Memory as a storage tier (beta)
+Support for Archival Storage
+Transparent data at rest encryption (beta)
+Operating secure DataNode without requiring root access
+Hot swap drive: support add/remove data node volumes without restarting data node (beta)
+AES support for faster wire encryption
+Hadoop YARN
+Support for long running services in YARN
+Service Registry for applications
+Support for rolling upgrades
+Work-preserving restarts of ResourceManager
+Container-preserving restart of NodeManager
+Support node labels during scheduling
+Support for time-based resource reservations in Capacity Scheduler (beta)
+Global, shared cache for application artifacts (beta)
+Support running of applications natively in Docker containers (alpha)
+Full information about this milestone release is available at Hadoop Releases.
+
+19 November, 2014: release 2.5.2 available
+Full information about this milestone release is available at Hadoop Releases.
+
+12 September, 2014: release 2.5.1 available
+Full information about this milestone release is available at Hadoop Releases.
+
+11 August, 2014: release 2.5.0 available
+Full information about this milestone release is available at Hadoop Releases.
+
+30 June, 2014: release 2.4.1 available
+Full information about this milestone release is available at Hadoop Releases.
+
+27 June, 2014: release 0.23.11 available
+Full information about this milestone release is available at Hadoop Releases.
+
+07 April, 2014: release 2.4.0 available
+Full information about this milestone release is available at Hadoop Releases.
+
+20 February, 2014: release 2.3.0 available
+Full information about this milestone release is available at Hadoop Releases.
+
+11 December, 2013: release 0.23.10 available
+Full information about this milestone release is available at Hadoop Releases.
+
+15 October, 2013: release 2.2.0 available
+Apache Hadoop 2.x reaches GA milestone! Full information about this milestone release is available at Hadoop Releases.
+
+25 August, 2013: release 2.1.0-beta available
+Apache Hadoop 2.x reaches beta milestone! Full information about this milestone release is available at Hadoop Releases.
+
+27 December, 2011: release 1.0.0 available
+Hadoop reaches 1.0.0! Full information about this milestone release is available at Hadoop Releases.
+
+March 2011 - Apache Hadoop takes top prize at Media Guardian Innovation Awards
+Described by the judging panel as a "Swiss army knife of the 21st century", Apache Hadoop picked up the innovator of the year award for having the potential to change the face of media innovations.
+
+See The Guardian web site
+
+January 2011 - ZooKeeper Graduates
+Hadoop's ZooKeeper subproject has graduated to become a top-level Apache project.
+
+Apache ZooKeeper can now be found at http://zookeeper.apache.org/
+
+September 2010 - Hive and Pig Graduate
+Hadoop's Hive and Pig subprojects have graduated to become top-level Apache projects.
+
+Apache Hive can now be found at http://hive.apache.org/
+
+Pig can now be found at http://pig.apache.org/
+
+May 2010 - Avro and HBase Graduate
+Hadoop's Avro and HBase subprojects have graduated to become top-level Apache projects.
+
+Apache Avro can now be found at http://avro.apache.org/
+
+Apache HBase can now be found at http://hbase.apache.org/
+
+July 2009 - New Hadoop Subprojects
+Hadoop is getting bigger!
+
+Hadoop Core is renamed Hadoop Common.
+MapReduce and the Hadoop Distributed File System (HDFS) are now separate subprojects.
+Avro and Chukwa are new Hadoop subprojects.
+See the summary descriptions for all subprojects above. Visit the individual sites for more detailed information.
+
+Ambari
+Documentation
+Releases
+External Links
+ Ambari
+Ambari  / Last Published: 2017-10-25|Version: 2.5.2
+AMBARI
+Overview
+What's New?
+Project Team
+IRC Channel
+Mailing Lists
+Issue Tracking
+User Group
+Project License
+DOCUMENTATION
+Wiki
+Quick Start Guide
+Features + Roadmap
+API Reference
+Install Guide for 2.5.2
+Install Guide for 2.5.1
+Install Guide for 2.5.0
+Install Guide for 2.4.3
+Install Guide for 2.4.2
+Install Guide for 2.4.1
+Install Guide for 2.4.0
+Install Guide for 2.2.2
+Install Guide for 2.2.1
+Install Guide for 2.2.0
+Install Guide for 2.1.2
+Install Guide for 2.1.1
+Install Guide for 2.1.0
+Install Guide for 2.0.2
+Install Guide for 2.0.1
+Install Guide for 2.0.0
+Install Guide for 1.7.0
+Install Guide for 1.6.1
+Install Guide for 1.6.0
+Install Guide for 1.5.1
+Install Guide for 1.5.0
+Install Guide for 1.4.4
+Install Guide for 1.4.3
+Install Guide for 1.4.2
+Install Guide for 1.4.1
+Install Guide for 1.2.5
+Install Guide for 1.2.4
+Install Guide for 1.2.3
+Install Guide for 1.2.2
+Install Guide for 1.2.1
+Install Guide for 1.2.0
+Install Guide for 0.9
+RELEASES
+2.5.2
+2.5.1
+2.5.0
+2.4.3
+2.4.2
+2.4.1
+2.4.0
+2.2.2
+2.2.1
+2.2.0
+2.1.2
+2.1.1
+2.1.0
+2.0.2
+2.0.1
+2.0.0
+1.7.0
+1.6.1
+1.6.0
+1.5.1
+1.5.0
+1.4.4
+1.4.3
+1.4.2
+1.4.1
+1.2.5
+1.2.4
+1.2.3
+1.2.2
+1.2.1
+1.2.0
+0.9
+ Built by Maven
+Introduction
+The Apache Ambari project is aimed at making Hadoop management simpler by developing software for provisioning, managing, and monitoring Apache Hadoop clusters. Ambari provides an intuitive, easy-to-use Hadoop management web UI backed by its RESTful APIs.
+Linked Applications
+ASF JIRA
+Dashboards
+Projects
+Issues
+Agile
+
+Search
+Help
+Log In
+Uploaded image for project: 'Ambari'
+AmbariAMBARI-5707
+Replace Ganglia with high performance and pluggable Metrics System
+Agile Board
+ Export
+Details
+Type: Epic
+Status:RESOLVED
+Priority: Critical
+Resolution: Fixed
+Affects Version/s:
+1.6.0
+Fix Version/s:
+2.0.0
+Component/s:
+ambari-agent, ambari-server
+Labels:None
+Epic Name: Ambari Metrics System
+Description
+Ambari Metrics System
+Ability to collect metrics from Hadoop and other Stack services
+Ability to retain metrics at a high precision for a configurable time period (say 5 days)
+Ability to automatically purge metrics after retention period
+At collection time, provide clear integration point for external system (such as TSDB)
+At purge time, provide clear integration point for metrics retention by external system
+Should provide default options for external metrics retention (say “HDFS”)
+Provide tools / utilities for analyzing metrics in retention system (say “Hive schema, Pig scripts, etc” that can be used with the default retention store “HDFS”)
+System Requirements
+Must be portable and platform independent
+Must not conflict with any existing metrics system (such as Ganglia)
+Must not conflict with existing SNMP infra
+Must not run as root
+Must have HA story (no SPOF)
+Usage
+Ability to obtain metrics from Ambari REST API (point in time and temporal)
+Ability to view metric graphs in Ambari Web (currently, fixed)
+Ability to configure custom metric graphs in Ambari Web (currently, we have metric graphs “fixed” into the UI)
+Need to improve metric graph “navigation” in Ambari Web (currently, metric graphs do not allow navigation at arbitrary timeframes, but only at ganglia aggregation intervals)
+Ability to “view cluster” at point in time (i.e. see all metrics at that point)
+Ability to define metrics (and how + where to obtain) in Stack Definitions
+
+Attachments
+ PNG File
+MetricsArchLatest.png 09/Jul/14 00:31197 kB
+ PNG File
+Revised archtecture diagram.png 16/Sep/14 21:24351 kB
+Issue Links
+supercedes
+Epic - Created by JIRA Agile - do not edit or delete. Issue type for a big user story that needs to be broken down. AMBARI-10144 Ambari Metrics System v0.2 - Enhancements	 Major - Major loss of function. OPEN
+Epic - Created by JIRA Agile - do not edit or delete. Issue type for a big user story that needs to be broken down. AMBARI-15901 Ambari Metrics System Distributed mode - multiple Collectors	 Critical - Crashes, loss of data, severe memory leak. RESOLVED
+links to
+Web Link Review board - Trunk merge
+Issues in Epic
+ 	AMBARI-7678	Add Hadoop Metric Sink implementation to push metrics to ATS	Task	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-7679	Add psutil based resource monitoring to collect host metrics	Task	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-7680	Implement the Metric Collector using ATS	Task	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-7681	Add Metrics Serivce to common services stack	Task	RESOLVED	Myroslav Papirkovskyi
+Actions
+ 	AMBARI-7818	Create Metrics Load Simulator	Task	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-7965	Externalize all hard-coded config properties from Timeline service	Task	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-8420	Add Amabri Metric Provider to get metrics from AMS	Task	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-8453	Configure AMS metrics to be stored in its own storage layer	Task	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-8471	Cleanup unncessary dep jars from amabri-metrics rpm	Task	RESOLVED	Myroslav Papirkovskyi
+Actions
+ 	AMBARI-8499	Fix config settings and emitter code in host monitor	Task	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-8500	Metric Collector dies if HBase is not initialized	Task	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-8521	Add STORM metric sink implementation to enable sink to AMS	Improvement	RESOLVED	Szilard Nemethy
+Actions
+ 	AMBARI-8522	Enable Flume metrics sink to AMS	Improvement	RESOLVED	Szilard Nemethy
+Actions
+ 	AMBARI-8528	Investigate and fix missing graphs	Task	RESOLVED	Dmytro Sen
+Actions
+ 	AMBARI-8535	AMS Provider is not instantiated after install	Task	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-8544	Integrate AMS with Ambari Alerting System	Task	RESOLVED	Dmytro Sen
+Actions
+ 	AMBARI-8545	Create stack advisor script to recommend configurations	Task	RESOLVED	Dmytro Sen
+Actions
+ 	AMBARI-8566	Remaining changes to Hadoop Sink implementation	Task	RESOLVED	Myroslav Papirkovskyi
+Actions
+ 	AMBARI-8594	Push AMS Hbase metrics with its own appid	Task	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-8599	Support altering TTL on Phoenix tables	Task	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-8655	AMS build fails with maven version higher then 3.0.5	Bug	RESOLVED	Myroslav Papirkovskyi
+Actions
+ 	AMBARI-8662	Incorrect / Missing metrics data	Bug	RESOLVED	Dmytro Sen
+Actions
+ 	AMBARI-8692	Hadoop sink is not loaded by services	Bug	RESOLVED	Myroslav Papirkovskyi
+Actions
+ 	AMBARI-8741	Create assembly module to place ambari metrics rpms into single output dir	Bug	RESOLVED	Myroslav Papirkovskyi
+Actions
+ 	AMBARI-8742	Implement Report graphs capability in AMS	Task	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-8769	Aggregator checkpoint logic should take into account the checkPointDelay	Bug	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-8842	Support point in time queries	Task	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-8845	Configure number of regions created for SYSTEM.SEQUENCE	Task	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-8866	Jasper dependencies cause AMS webapp start failure	Bug	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-8869	Include AMS debian packages in Ambari build	Task	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-8872	Support point in time queries	Task	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-8894	Remove unnecessary dependencies from flume and storm sinks	Task	RESOLVED	Myroslav Papirkovskyi
+Actions
+ 	AMBARI-8896	Change Hadoop and Phoenix to latest available versions	Task	RESOLVED	Myroslav Papirkovskyi
+Actions
+ 	AMBARI-8946	Fix non-deterministic unit test in Flume sink	Bug	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-8961	Add alert description for AMS	Task	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-8973	Add precision option support to Ambari Metrics API	Task	RESOLVED	Dmytro Sen
+Actions
+ 	AMBARI-8977	Unit test failue on CentOS 5	Bug	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-8994	AMS : Yarn service - RPC metrics returns duplicate array elements.	Bug	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-9015	Unsorted aggregate metrics returned by API	Bug	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-9034	Add ability to change log and pid dirs for AMS daemons	Task	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-9084	Refine Smoke test for AMS	Task	RESOLVED	Dmytro Sen
+Actions
+ 	AMBARI-9090	Tune stack advisor configs based on perf tests	Task	RESOLVED	Dmytro Sen
+Actions
+ 	AMBARI-9113	Metric Collector can not to start on secure cluster	Bug	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-9115	Add Metrics Sytem to 2.* stacks	Task	RESOLVED	Myroslav Papirkovskyi
+Actions
+ 	AMBARI-9161	Disable per Region metrics for the Metrics System	Task	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-9165	Support querying Metrics System Hbase metrics using Ambari API	Task	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-9185	Add Kafka metric sink implementation to enable sink to AMS	Task	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-9200	AMS : Metric monitor fails to start	Bug	RESOLVED	Dmytro Sen
+Actions
+ 	AMBARI-9233	Storm cluster metrics need to be reported to AMS	Task	RESOLVED	Dmytro Sen
+Actions
+ 	AMBARI-9237	AMS Service Check fails intermittently due to connection error	Task	RESOLVED	Dmytro Sen
+Actions
+ 	AMBARI-9278	Allow hostname customization for metric monitor	Task	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-9304	AMS: Optimize LikeCondition	Bug	RESOLVED	Dmytro Sen
+Actions
+ 	AMBARI-9351	AMS crashes after filling 100% disk space in /tmp	Bug	RESOLVED	Dmytro Sen
+Actions
+ 	AMBARI-9427	AMS: installed a cluster w/o hbase but hbase user shows	Bug	RESOLVED	Myroslav Papirkovskyi
+Actions
+ 	AMBARI-9534	AMS Service Rename	Bug	RESOLVED	Dmytro Sen
+Actions
+ 	AMBARI-9542	Ams Service Check failed on 3-node cluster	Task	RESOLVED	Florian Barca
+Actions
+ 	AMBARI-9592	AMS: no metrics showing for services	Bug	RESOLVED	Dmytro Sen
+Actions
+ 	AMBARI-9604	Fix Flume Agent graphs on Ambari service page	Bug	RESOLVED	Dmytro Sen
+Actions
+ 	AMBARI-9612	AMS : Kafka Metrics - Log flush status metrics do not show up.	Task	RESOLVED	Florian Barca
+Actions
+ 	AMBARI-9650	Metrics monitor alert is unknown	Bug	RESOLVED	Dmytro Sen
+Actions
+ 	AMBARI-9651	Add API level validation and error handling to AMS timeline service	Task	RESOLVED	Dmytro Sen
+Actions
+ 	AMBARI-9652	AMS : Hosts metrics - "mem_shared" metrics array contains "null"	Bug	RESOLVED	Dmytro Sen
+Actions
+ 	AMBARI-9710	API taking long time to respond (causes UI to load very slowly)	Bug	RESOLVED	Dmytro Sen
+Actions
+ 	AMBARI-9771	AMS: ResultSpooler spill files are left behind in /tmp folder	Bug	RESOLVED	Dmytro Sen
+Actions
+ 	AMBARI-9845	AMS: gets into bad state and Ambari Web becomes sluggish and unstable	Bug	RESOLVED	Dmytro Sen
+Actions
+ 	AMBARI-9861	Metric Collector is installed on all nodes	Bug	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-9880	AMS - StormTimelineMetricsReporter hardcodes APP_ID to nimbus	Bug	RESOLVED	Gour Saha
+Actions
+ 	AMBARI-9970	Metrics are absent for Storm	Bug	RESOLVED	Myroslav Papirkovskyi
+Actions
+ 	AMBARI-10019	Metrics are absent on slider View page	Bug	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-10066	AMS collector died due to ZK session timeout	Bug	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-10076	Set default minute based host level aggregation to 2 minutes	Task	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-10097	Low memory setting on phoenix client leads to perf degradation	Bug	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-10111	Tune GC settings for HBase daemon	Task	RESOLVED	Siddharth Wagle
+Actions
+ 	AMBARI-12380	Ambari Metrics	Bug	RESOLVED	Unassigned
+Actions
+Activity
+All
+Comments
+Work Log
+History
+Activity
+Transitions
+Ascending order - Click to sort in descending order
+Permalink
+swagle Siddharth Wagle added a comment - 08/May/14 00:59 - edited
+Proposed Architecture
+Please refer to the attachment
+Legend: Green: New components / services, Blue: Integration points, -> Arrows indicate direction of data flow.
+Details
+Ambari Metrics Sink:
+Replacement for Ganglia Sink that implements the Hadoop Metrics Sink interface, http://hadoop.apache.org/docs/r1.1.1/api/org/apache/hadoop/metrics2/MetricsSink.html
+Ambari Metrics Collector Service: A replacement for gmetad.
+We get rid of the writing to FS and then reading back the data in response to the call from GangliaPropertyProvider, instead we use a lightweight wire protocol to push metrics to a collector service which writes it to a local key-value store (e.g.: LevelDB) as well as to a pluggable Storage service layer.
+The write to DB can be done in parallel with the push to a remote long term storage and analysis solution like OpenTSDB by the collector service using a named pipe in an asynchronous and process space independent manner.
+The Remote Storage Service provider will be expected to provide a jar file with implementation of a shared Sink interface for pushing metrics at real-time. The vision is to allow user to extend a Sink interface and hook their own metrics storage.
+Ambari Metrics Service:
+An API layer which provides access to the stored metric data and capability to query it. Additionally, pluggability in terms of where the fine grained metrics data is written for long term storage.
+The Amabri admin can configure this to use their own metric storage and thereby configure the collectors.
+Host Metrics Collector Daemon: This is replacement for the gmond running on hosts.
+The host level metrics like cpu, disk, etc are captured by the Ganglia monitor daemon. We should be able to re-purpose this to push metrics to the Ambari Metrics Collector Service.
+Long term goal is to re-write gmond and create our own collector to achieve the following goals:
+Reduce network traffic by reducing number of packets sent over the wire
+Reduce the number of processes running per host for monitoring workload
+HA Requirements:
+Ambari Metrics Service: This is a Master daemon and might have built in HA support in the future.
+Scaling out:
+The Ambari Metrics Collector can be envsioned as a Slave and a typical cluster should be able to deploy multiple instances of this service achieving fan out based on number of hosts in the cluster.
+Permalink
+subin11 subin added a comment - 13/May/14 03:00
++1 for this ,fantastic proposal .Something I had always wanted.
+Considering the conflicting ganglia/nagios versions on existing customer setups.This would help a lot.
+Will this daemon be coded in python? I am suggesting something in C/scala/erlang (C best) to capture data and dump it out as json.
+And agent itself can also have a webui(disabled by default) which can show the metrics.
+But OpenTSDB is already has python tcollector and a LGPL .So would we be inspired from it ,and rewrite it ?
+One last question I have is regarding whether you are considering to get the visualization as good/similar as in ganglia
+Ganglia uses RRDTool(i guess) which is again GPL. So does the plan also include improving the server side to render the data in a different way.
+Permalink
+jayunit100 jay vyas added a comment - 13/May/14 03:20
+It would be a good result but — at first thought: Im a little wary of this: If Ambari re-builds alot of components in the stack, it might wind up being to hard to maintain as a open source project. One of the better ways maybe is reach out to ganglia community about the problems we face. Is a combination of custom JMX hooks + Ganglia not enough to accomplish the above bullets.
+Permalink
+pradeepg26 Pradeep Gollakota added a comment - 04/Jun/14 06:31
+I too agree that it may not be the best idea for Ambari to rebuild components of the stack. However, I would like to see a pluggable architecture for Metrics. For example, we use Datadog heavily, so it would be great if Ambari could plug into our existing metrics infrastructure and pull graphs directly from Datadog.
+Permalink
+swagle Siddharth Wagle added a comment - 16/Sep/14 21:59 - edited
+Revised architecture overview: (Revised arch diagram attached)
+Problems with current system:
+Ganglia has limited capabilities for analyzing historic data, new plugins are not easy to write.
+Horizontal scale out for large clusters.
+No support for adhoc queries.
+Not easy to add metrics support for new services added to the stack.
+It is non trivial to hook up existing time series databases like OpenTSDB to store raw data forever.
+Solution:
+Replace Ganglia with bespoke solution based on an embedded HBase to fit all needs.
+Ability to store fine-grained data for a configurable amount of time.
+Ability to write SQL (via Phoenix) like queries on aggregated metric data sets and visualize the results.
+Provide pluggable storage API with ability to forward metric data to external long-term storage.
+Ability to add user defined metrics and visualize them through the Ambari Views.
+Component description:
+Host metrics monitor:
+A lightweight python process running on every managed host and collecting metrics for the managed processes running on the host in addition to aggregate metrics for the entire host. The collected metrics will be pushed to a pre-configured metric collector to be stored for consumption by the Ambari API.
+Hadoop Metrics Sink:
+Implementation of Hadoop Metrics Sink interface to push data to a configured collector. As a part of the Hadoop Metric Sink implementation, allow a periodic flush of collected metrics data, the putMetric() should write data into a Bounded Buffer cache with a fixed size, configurable through the hadoop-metrics2.properties.
+Timeline Metrics Collector:
+Metrics collector is daemon that receives data from registered publishers and provides ability to push the metrics data to an external metric storage like OpenTSDB or HDFS along with pushing data to a local metrics store. Additionally, the metrics collector provides ability to plugin aggregators for the collected metric data. The aggregation is performed post-write by aggregator threads running with a configured time interval and aggregating data collected within that interval.
+Timeline Metrics Store:
+A time series database is ideal for storing metrics data. The main advantage is variable time buckets, for example a row key indicating a metric id followed by an arbitrary number of key value pairs that fit into the time range identified by a part of the key. This storage model allows simple time based aggregation and avoids sparse rows. The deployment modes of HBASE allow for scaling up and down based on cluster size. Also, the choice of HBASE as default storage allows storage to scale independently and seamlessly from the Metric Collectors. Phoenix's SQL - Phoenix provides JDBC APIs instead of the regular HBase client APIs to create tables, insert data, and query your HBase data.
+Ambari Metrics Service:
+The API design for the Metrics Service should support GET API using key and time range similar what exists on the HBASE cluster.
+Ambari Views:
+Ambari Views on top of Phoenix provide ad-hoc query capability to the user along with a View to replace Ganglia Web
+Permalink
+hudson Hudson added a comment - 02/Dec/14 18:33
+SUCCESS: Integrated in Ambari-trunk-Commit #1076 (See https://builds.apache.org/job/Ambari-trunk-Commit/1076/)
+AMBARI-5707. Replace Ganglia with high performant and pluggable Metrics System. (swagle) (swagle: http://git-wip-us.apache.org/repos/asf?p=ambari.git&a=commit&h=a52f8a5572f689351a22d41f62bd083c27a3bfa8)
+ambari-server/src/test/java/org/apache/ambari/server/controller/ganglia/GangliaPropertyProviderTest.java
+ambari-metrics/ambari-metrics-hadoop-sink/src/main/assemblies/empty.xml
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/timeline/NameValuePair.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/data/Metric.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/ApplicationHistoryServer.java
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/files/hbaseSmokeVerify.sh
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/docs/make.bat
+ambari-metrics/ambari-metrics-timelineservice/src/main/assemblies/phoenix-server.xml
+pom.xml
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/net/TestStdOutMetricsSender.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/arch/bsd/process_info.c
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_pslinux.py
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/ApplicationHistoryWriter.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/examples/nettop.py
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/util/Json.java
+ambari-server/src/test/java/org/apache/ambari/server/controller/ganglia/GangliaMetricTest.java
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/configuration/ams-site.xml
+ambari-metrics/ambari-metrics-timelineservice/src/main/assemblies/phoenix-components-minimal.xml
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/scripts/ams_service.py
+ambari-metrics/ambari-metrics-timelineservice/src/main/resources/metrics_def/DATANODE.dat
+ambari-server/src/test/java/org/apache/ambari/server/controller/metrics/ganglia/GangliaReportPropertyProviderTest.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/arch/windows/security.h
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_psutil_posix.c
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_psbsd.py
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_psutil_windows.h
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/webapp/ContainerPage.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_pswindows.py
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/timeline/LeveldbTimelineStore.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/ApplicationHistoryClientService.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/resources/scripts/start_slaves.sh
+ambari-metrics/ambari-metrics-timelineservice/src/main/resources/metrics_def/SLAVE_HBASE.dat
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/ganglia/GangliaHostComponentPropertyProvider.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/TimelineMetricClusterAggregatorHourly.java
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/util/TestRandomMetricsProvider.java
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/scripts/metric_collector.py
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/records/ApplicationStartData.java
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/TestApplicationHistoryManagerImpl.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/data/HostMetricsGenerator.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/TimelineMetricAggregator.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/timeline/TimelineStore.java
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/configuration/ams-hbase-site.xml
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/net/TestRestMetricsSender.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/resources/scripts/stop_slaves.sh
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/arch/windows/security.c
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/records/ContainerStartData.java
+ambari-server/src/test/java/org/apache/ambari/server/controller/metrics/timeline/AMSPropertyProviderTest.java
+ambari-server/src/test/java/org/apache/ambari/server/controller/ganglia/TestStreamProvider.java
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/templates/regionservers.j2
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/TestTimelineMetricStore.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_pssunos.py
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_common.py
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/configuration/ams-hbase-env.xml
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/timeline/GenericObjectMapper.java
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/webapp/TestAHSWebApp.java
+ambari-metrics/ambari-metrics-timelineservice/src/test/resources/hbase-default.xml
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/ThreadPoolEnabledPropertyProvider.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/core/controller.py
+ambari-server/src/test/java/org/apache/ambari/server/controller/ganglia/GangliaHelperTest.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/core/application_metric_map.py
+ambari-server/src/test/resources/ams/single_component_metrics.json
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/make.bat
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/docs/Makefile
+ambari-metrics/ambari-metrics-timelineservice/src/test/resources/lib/org/apache/phoenix/phoenix-core-tests/4.2.0/phoenix-core-tests-4.2.0.pom
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/records/ApplicationAttemptStartData.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/records/impl/pb/ApplicationAttemptFinishDataPBImpl.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/webapp/TimelineWebServices.java
+ambari-server/src/main/java/org/apache/ambari/server/controller/ganglia/GangliaMetric.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/resources/metrics_def/RESOURCEMANAGER.dat
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/TestMetricHostAggregate.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/webapp/AHSView.java
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/MetricsPropertyProvider.java
+ambari-server/src/main/java/org/apache/ambari/server/controller/ganglia/GangliaHostComponentPropertyProvider.java
+ambari-metrics/ambari-metrics-timelineservice/conf/unix/log4j.properties
+ambari-server/src/main/java/org/apache/ambari/server/state/Service.java
+ambari-server/src/main/resources/ganglia_properties.json
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_psutil_common.c
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/docs/index.rst
+ambari-server/src/main/resources/stacks/HDP/2.0.6/services/HBASE/package/scripts/params.py
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/ganglia/GangliaPropertyProvider.java
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/data/TestMetric.java
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/scripts/metric_monitor.py
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/ganglia/GangliaHostPropertyProvider.java
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/AbstractMiniHBaseClusterTest.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/examples/disk_usage.py
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/timeline/AMSHostPropertyProvider.java
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/timeline/TimelineStoreTestUtils.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/NullApplicationHistoryStore.java
+ambari-server/src/test/java/org/apache/ambari/server/controller/utilities/PropertyHelperTest.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/MetricAggregate.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_psutil_posix.h
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/util/RandomMetricsProvider.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/resources/metrics_def/NAMENODE.dat
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/configuration/ams-env.xml
+ambari-metrics/ambari-metrics-timelineservice/conf/unix/ams-site.xml
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/net/RestMetricsSender.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/records/impl/pb/ContainerFinishDataPBImpl.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/net/UrlService.java
+ambari-server/src/main/java/org/apache/ambari/server/controller/ganglia/GangliaHostProvider.java
+ambari-metrics/ambari-metrics-hadoop-sink/src/main/conf/hadoop-metrics2-hbase.properties.j2
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/webapp/AHSController.java
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/data/TestAppMetrics.java
+ambari-metrics/ambari-metrics-hadoop-sink/src/main/conf/hadoop-metrics2.properties.j2
+ambari-metrics/ambari-metrics-timelineservice/src/main/resources/scripts/start.sh
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/webapp/TestTimelineWebServices.java
+ambari-metrics/ambari-metrics-timelineservice/conf/unix/ams-env.sh
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/scripts/hbase_service.py
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/configuration/ams-hbase-policy.xml
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/arch/osx/process_info.c
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/TestClusterSuite.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/TimelineMetricStore.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/records/ApplicationFinishData.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/arch/bsd/process_info.h
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/scripts/hbase_master.py
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/webapp/JAXBContextResolver.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_compat.py
+ambari-metrics/ambari-metrics-host-monitoring/src/test/python/core/TestEmitter.py
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/metainfo.xml
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/LoadRunner.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_psutil_sunos.c
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/ApplicationHistoryManagerImpl.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/core/emitter.py
+ambari-server/src/main/java/org/apache/ambari/server/controller/ganglia/GangliaHostPropertyProvider.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/data/AppID.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/PhoenixHBaseAccessor.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/PhoenixTransactSQL.java
+ambari-server/src/test/java/org/apache/ambari/server/controller/internal/StackDefinedPropertyProviderTest.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/examples/pmap.py
+ambari-server/src/main/java/org/apache/hadoop/metrics2/sink/timeline/TimelineMetric.java
+ambari-server/src/test/resources/ams/multiple_host_metrics.json
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/TestMemoryApplicationHistoryStore.java
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/ganglia/GangliaMetric.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_psutil_linux.h
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/docs/_template/globaltoc.html
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/timeline/TestMemoryTimelineStore.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_psutil_linux.c
+ambari-metrics/ambari-metrics-timelineservice/src/main/assemblies/ats.xml
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/MetricsReportPropertyProvider.java
+ambari-metrics/ambari-metrics-timelineservice/src/test/resources/lib/org/apache/phoenix/phoenix-core-tests/maven-metadata-local.xml
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/ApplicationHistoryStore.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/webapp/AppPage.java
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/ITClusterAggregator.java
+ambari-server/src/test/java/org/apache/ambari/server/controller/metrics/RestMetricsPropertyProviderTest.java
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/templates/hbase_client_jaas.conf.j2
+ambari-metrics/ambari-metrics-hadoop-sink/src/main/assemblies/sink.xml
+ambari-server/src/main/java/org/apache/ambari/server/controller/utilities/PropertyHelper.java
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/ganglia/GangliaComponentPropertyProvider.java
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/ITMetricAggregator.java
+ambari-server/src/test/resources/ams/single_host_metric.json
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/README
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/LICENSE
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/docs/_template/indexcontent.html
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/docs/conf.py
+ambari-server/src/test/java/org/apache/ambari/server/controller/ganglia/GangliaReportPropertyProviderTest.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/resources/metrics_def/NODEMANAGER.dat
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/timeline/AMSPropertyProvider.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_psutil_osx.c
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/HBaseTimelineMetricStore.java
+ambari-metrics/ambari-metrics-timelineservice/pom.xml
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_psutil_sunos.h
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/templates/metric_groups.conf.j2
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/templates/hbase_grant_permissions.j2
+ambari-metrics/ambari-metrics-hadoop-sink/src/main/java/org/apache/hadoop/metrics2/sink/timeline/TimelineMetricsSink.java
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/TestPhoenixTransactSQL.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/AbstractTimelineAggregator.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/webapp/AppAttemptPage.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/webapp/AHSLogsPage.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/examples/meminfo.py
+ambari-server/src/test/resources/ams/multiple_component_metrics.json
+ambari-server/src/test/java/org/apache/ambari/server/controller/internal/AbstractPropertyProviderTest.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/conf/simulator-log4j.xml
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/TestApplicationHistoryServer.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/main.py
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/records/impl/pb/ContainerStartDataPBImpl.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/FileSystemApplicationHistoryStore.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/arch/windows/process_info.c
+ambari-metrics/ambari-metrics-timelineservice/src/test/conf/ams-site.xml
+ambari-server/src/main/resources/stacks/HDP/2.2/services/HDFS/configuration/hadoop-env.xml
+ambari-metrics/ambari-metrics-host-monitoring/src/main/package/rpm/preremove.sh
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/records/ApplicationHistoryData.java
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/scripts/service_check.py
+ambari-server/src/main/java/org/apache/ambari/server/controller/internal/AbstractProviderModule.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/core/config_reader.py
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/MetricsLoadSimulator.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/examples/process_detail.py
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/arch/windows/process_handles.h
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/data/AppMetrics.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_psutil_windows.c
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/Makefile
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/examples/netstat.py
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/ApplicationHistoryManager.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/MetricHostAggregate.java
+ambari-metrics/ambari-metrics-hadoop-sink/pom.xml
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/docs/_themes/pydoctheme/static/pydoctheme.css
+ambari-metrics/ambari-metrics-hadoop-sink/src/main/java/org/apache/hadoop/metrics2/sink/timeline/TimelineMetricsCache.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/TimelineMetricAggregatorFactory.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/core/host_info.py
+ambari-server/src/test/java/org/apache/ambari/server/controller/metrics/ganglia/TestStreamProvider.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/examples/killall.py
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_psutil_common.h
+ambari-metrics/ambari-metrics-hadoop-sink/src/main/java/org/apache/hadoop/metrics2/sink/timeline/AbstractTimelineMetricsSink.java
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/templates/hadoop-metrics2-hbase.properties.j2
+ambari-server/src/test/java/org/apache/ambari/server/controller/metrics/ganglia/GangliaMetricTest.java
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/timeline/AMSReportPropertyProvider.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/MetricsSenderWorker.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/net/MetricsSender.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/Aggregator.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_init_.py
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/records/ContainerFinishData.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_psosx.py
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/RestMetricsPropertyProvider.java
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/TestFileSystemApplicationHistoryStore.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/timeline/TimelineReader.java
+ambari-server/src/main/java/org/apache/hadoop/metrics2/sink/timeline/TimelineMetrics.java
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/templates/metric_monitor.ini.j2
+ambari-metrics/ambari-metrics-timelineservice/src/test/conf/hbase-site.xml
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/records/impl/pb/ApplicationFinishDataPBImpl.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/MetricsInitializationException.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/core/metric_collector.py
+ambari-metrics/ambari-metrics-timelineservice/src/main/resources/metrics_def/MASTER_HBASE.dat
+ambari-server/src/main/java/org/apache/ambari/server/controller/ganglia/GangliaComponentPropertyProvider.java
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/scripts/params.py
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/scripts/_init_.py
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/records/ApplicationAttemptFinishData.java
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/scripts/hbase.py
+ambari-server/src/main/java/org/apache/ambari/server/controller/internal/StackDefinedPropertyProvider.java
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/timeline/TestGenericObjectMapper.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/timeline/MemoryTimelineStore.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/MetricClusterAggregate.java
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/MetricsHostProvider.java
+ambari-server/src/main/java/org/apache/ambari/server/controller/ganglia/GangliaPropertyProvider.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_psutil_bsd.h
+ambari-metrics/ambari-metrics-timelineservice/src/main/assemblies/phoenix-components-major-client.xml
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/arch/windows/process_info.h
+ambari-server/src/test/java/org/apache/ambari/server/controller/metrics/JMXPropertyProviderTest.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/examples/who.py
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/docs/_static/copybutton.js
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/scripts/status_params.py
+ambari-server/src/main/resources/stacks/HDP/2.0.6/hooks/before-START/templates/hadoop-metrics2.properties.j2
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/timeline/package-info.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/arch/windows/ntextapi.h
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/docs/_themes/pydoctheme/theme.conf
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/ganglia/GangliaReportPropertyProvider.java
+ambari-metrics/pom.xml
+ambari-metrics/ambari-metrics-host-monitoring/src/test/python/unitTests.py
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/scripts/functions.py
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/docs/_template/page.html
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/TimelineMetricClusterAggregator.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/ApplicationHistoryReader.java
+ambari-server/src/test/java/org/apache/ambari/server/controller/metrics/ganglia/GangliaPropertyProviderTest.java
+ambari-metrics/ambari-metrics-host-monitoring/pom.xml
+.gitignore
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/configuration/ams-hbase-log4j.xml
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/util/TestTimeStampProvider.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/MANIFEST.in
+ambari-server/src/main/java/org/apache/ambari/server/controller/ganglia/GangliaReportPropertyProvider.java
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/MetricHostProvider.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/docs/_template/indexsidebar.html
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/scripts/hbase_regionserver.py
+ambari-metrics/ambari-metrics-timelineservice/src/main/conf/hbase-site-metrics-service.xml
+ambari-metrics/ambari-metrics-timelineservice/src/main/resources/scripts/stop.sh
+ambari-metrics/ambari-metrics-timelineservice/src/main/resources/scripts/ams_query.py
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/configuration/ams-log4j.xml
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/net/StdOutMetricsSender.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/webapp/AHSWebServices.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/examples/iotop.py
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_psposix.py
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/examples/top.py
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/AbstractPhoenixConnectionlessTest.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/records/ContainerHistoryData.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/setup.py
+ambari-metrics/ambari-metrics-host-monitoring/src/test/python/core/TestMetricCollector.py
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/TimelineClusterMetric.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/core/event_definition.py
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/records/impl/pb/ApplicationStartDataPBImpl.java
+ambari-metrics/ambari-metrics-host-monitoring/src/test/python/core/TestApplicationMetricMap.py
+ambari-metrics/ambari-metrics-timelineservice/src/main/resources/metrics_def/HOST.dat
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/util/TimeStampProvider.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/examples/free.py
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/_init_.py
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/data/ApplicationInstance.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/assemblies/phoenix-client.xml
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/templates/hbase_master_jaas.conf.j2
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/TimelineMetricConfiguration.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/timeline/EntityIdentifier.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_psutil_bsd.c
+ambari-metrics/ambari-metrics-hadoop-sink/src/main/java/org/apache/hadoop/metrics2/sink/timeline/TimelineMetric.java
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/webapp/TestAHSWebServices.java
+ambari-metrics/ambari-metrics-host-monitoring/src/test/python/core/TestHostInfo.py
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/core/_init_.py
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/templates/hbase_regionserver_jaas.conf.j2
+ambari-metrics/ambari-metrics-host-monitoring/conf/unix/ambari-metrics-monitor
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/arch/osx/process_info.h
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/MemoryApplicationHistoryStore.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/assemblies/simulator.xml
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/webapp/NavBlock.java
+ambari-server/src/main/java/org/apache/ambari/server/controller/jmx/JMXPropertyProvider.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/docs/README
+ambari-server/src/main/resources/stacks/HDP/2.0.6/services/HBASE/package/templates/hadoop-metrics2-hbase.properties-GANGLIA-RS.j2
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/timeline/TestLeveldbTimelineStore.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/webapp/AHSWebApp.java
+ambari-server/src/main/java/org/apache/ambari/server/Role.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_psutil_osx.h
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/records/impl/pb/ApplicationAttemptStartDataPBImpl.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/resources/scripts/status_slaves.sh
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/timeline/AMSComponentPropertyProvider.java
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/timeline/AMSHostComponentPropertyProvider.java
+ambari-metrics/ambari-metrics-timelineservice/conf/unix/ambari-metrics-collector
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/ApplicationHistoryStoreTestUtils.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/assemblies/empty.xml
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/docs/_static/sidebar.js
+ambari-server/src/main/resources/stacks/HDP/2.0.6/services/HBASE/package/templates/hadoop-metrics2-hbase.properties-GANGLIA-MASTER.j2
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/MetricsProvider.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/DefaultPhoenixDataSource.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/arch/windows/process_handles.c
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/build.py
+ambari-server/src/main/resources/stacks/HDP/2.0.6/hooks/before-START/scripts/params.py
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/records/ApplicationAttemptHistoryData.java
+ambari-metrics/ambari-metrics-timelineservice/src/test/resources/lib/org/apache/phoenix/phoenix-core-tests/4.2.0/phoenix-core-tests-4.2.0.jar
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/scripts/ams.py
+ambari-metrics/ambari-metrics-timelineservice/src/test/conf/hadoop-policy.xml
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/arch/windows/glpi.h
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/ConnectionProvider.java
+ambari-server/src/main/resources/stacks/HDP/2.2/services/HBASE/configuration/hbase-env.xml
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/timeline/TimelineWriter.java
+ambari-metrics/ambari-metrics-hadoop-sink/src/main/java/org/apache/hadoop/metrics2/sink/timeline/TimelineMetrics.java
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/TestApplicationHistoryClientService.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/data/MetricsGeneratorConfigurer.java
+AMBARI-5707. Replace Ganglia with high performant and pluggable Metrics System. Rat check fix. (swagle) (swagle: http://git-wip-us.apache.org/repos/asf?p=ambari.git&a=commit&h=93b8348fabb4a50e2ed95ed1b98fea7fff4b2ab1)
+pom.xml
+ambari-server/src/main/java/org/apache/ambari/server/controller/internal/AbstractProviderModule.java
+Permalink
+hudson Hudson added a comment - 02/Dec/14 18:51
+SUCCESS: Integrated in Ambari-trunk-Commit-docker #360 (See https://builds.apache.org/job/Ambari-trunk-Commit-docker/360/)
+AMBARI-5707. Replace Ganglia with high performant and pluggable Metrics System. (swagle) (swagle: http://git-wip-us.apache.org/repos/asf?p=ambari.git&a=commit&h=a52f8a5572f689351a22d41f62bd083c27a3bfa8)
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/ApplicationHistoryServer.java
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/scripts/params.py
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/timeline/AMSPropertyProvider.java
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/timeline/AMSReportPropertyProvider.java
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/TestApplicationHistoryManagerImpl.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/docs/_template/globaltoc.html
+ambari-server/src/main/resources/stacks/HDP/2.0.6/services/HBASE/package/templates/hadoop-metrics2-hbase.properties-GANGLIA-RS.j2
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/webapp/TestTimelineWebServices.java
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/timeline/AMSHostPropertyProvider.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/PhoenixTransactSQL.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_pswindows.py
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/timeline/package-info.java
+ambari-server/src/main/java/org/apache/ambari/server/controller/ganglia/GangliaHostComponentPropertyProvider.java
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/AbstractMiniHBaseClusterTest.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_psutil_windows.c
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/MemoryApplicationHistoryStore.java
+ambari-metrics/ambari-metrics-host-monitoring/pom.xml
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/MetricClusterAggregate.java
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/ganglia/GangliaHostPropertyProvider.java
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/RestMetricsPropertyProvider.java
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/templates/hbase_regionserver_jaas.conf.j2
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/MetricsReportPropertyProvider.java
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/timeline/AMSComponentPropertyProvider.java
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/net/TestStdOutMetricsSender.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/docs/_static/copybutton.js
+ambari-metrics/ambari-metrics-timelineservice/src/main/assemblies/phoenix-components-minimal.xml
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/docs/index.rst
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/records/impl/pb/ApplicationAttemptFinishDataPBImpl.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/arch/osx/process_info.h
+ambari-server/src/main/java/org/apache/ambari/server/state/Service.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_psutil_posix.c
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/data/Metric.java
+ambari-server/src/main/resources/stacks/HDP/2.2/services/HBASE/configuration/hbase-env.xml
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/main.py
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/timeline/GenericObjectMapper.java
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/timeline/AMSHostComponentPropertyProvider.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/arch/windows/security.c
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/arch/windows/ntextapi.h
+ambari-metrics/ambari-metrics-hadoop-sink/src/main/java/org/apache/hadoop/metrics2/sink/timeline/AbstractTimelineMetricsSink.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/webapp/AHSController.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/docs/conf.py
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/ganglia/GangliaPropertyProvider.java
+ambari-metrics/ambari-metrics-host-monitoring/src/test/python/unitTests.py
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_pssunos.py
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/scripts/hbase_service.py
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/make.bat
+ambari-metrics/ambari-metrics-timelineservice/conf/unix/log4j.properties
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/webapp/TestAHSWebServices.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/resources/metrics_def/HOST.dat
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/ganglia/GangliaReportPropertyProvider.java
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/TestClusterSuite.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/arch/windows/process_handles.c
+ambari-metrics/ambari-metrics-host-monitoring/src/test/python/core/TestHostInfo.py
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/LICENSE
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/data/AppID.java
+ambari-metrics/ambari-metrics-host-monitoring/conf/unix/ambari-metrics-monitor
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_psutil_osx.c
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/MetricsSenderWorker.java
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/MetricsHostProvider.java
+.gitignore
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/docs/Makefile
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/records/impl/pb/ContainerFinishDataPBImpl.java
+ambari-server/src/main/resources/stacks/HDP/2.0.6/services/HBASE/package/scripts/params.py
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/configuration/ams-hbase-site.xml
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/data/TestMetric.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/docs/_template/indexsidebar.html
+ambari-metrics/ambari-metrics-timelineservice/src/main/resources/metrics_def/SLAVE_HBASE.dat
+ambari-metrics/ambari-metrics-timelineservice/src/main/resources/metrics_def/DATANODE.dat
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/scripts/metric_monitor.py
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/TimelineMetricClusterAggregatorHourly.java
+ambari-server/src/main/java/org/apache/ambari/server/controller/jmx/JMXPropertyProvider.java
+ambari-metrics/ambari-metrics-timelineservice/src/test/resources/lib/org/apache/phoenix/phoenix-core-tests/maven-metadata-local.xml
+ambari-metrics/ambari-metrics-timelineservice/src/main/resources/scripts/stop_slaves.sh
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/ApplicationHistoryManagerImpl.java
+ambari-server/src/test/java/org/apache/ambari/server/controller/ganglia/TestStreamProvider.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_psutil_windows.h
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/util/TimeStampProvider.java
+ambari-server/src/test/resources/ams/multiple_host_metrics.json
+ambari-metrics/ambari-metrics-hadoop-sink/pom.xml
+ambari-metrics/ambari-metrics-timelineservice/conf/unix/ams-env.sh
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/timeline/TimelineStoreTestUtils.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_psutil_bsd.h
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/PhoenixHBaseAccessor.java
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/timeline/TestLeveldbTimelineStore.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_psutil_sunos.c
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/templates/hadoop-metrics2-hbase.properties.j2
+ambari-server/src/main/java/org/apache/ambari/server/controller/internal/StackDefinedPropertyProvider.java
+ambari-server/src/main/java/org/apache/ambari/server/controller/utilities/PropertyHelper.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/resources/scripts/status_slaves.sh
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_psutil_posix.h
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/README
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/MetricHostAggregate.java
+ambari-metrics/ambari-metrics-timelineservice/src/test/conf/ams-site.xml
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/webapp/AHSWebServices.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/timeline/TimelineReader.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/build.py
+ambari-server/src/main/java/org/apache/ambari/server/controller/internal/AbstractProviderModule.java
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/MetricHostProvider.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/docs/make.bat
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/MetricsInitializationException.java
+ambari-server/src/main/java/org/apache/ambari/server/controller/ganglia/GangliaReportPropertyProvider.java
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/ThreadPoolEnabledPropertyProvider.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/assemblies/ats.xml
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/records/ContainerFinishData.java
+ambari-server/src/main/java/org/apache/ambari/server/Role.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/timeline/MemoryTimelineStore.java
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/ganglia/GangliaComponentPropertyProvider.java
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/util/TestTimeStampProvider.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/net/StdOutMetricsSender.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/arch/bsd/process_info.c
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/scripts/service_check.py
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/TestApplicationHistoryServer.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/assemblies/phoenix-server.xml
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/records/ApplicationAttemptFinishData.java
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/configuration/ams-hbase-env.xml
+ambari-server/src/test/java/org/apache/ambari/server/controller/metrics/timeline/AMSPropertyProviderTest.java
+ambari-metrics/ambari-metrics-hadoop-sink/src/main/java/org/apache/hadoop/metrics2/sink/timeline/TimelineMetric.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/records/ApplicationHistoryData.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/records/ContainerHistoryData.java
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/TestPhoenixTransactSQL.java
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/scripts/_init_.py
+ambari-metrics/ambari-metrics-timelineservice/src/test/conf/hadoop-policy.xml
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_psutil_osx.h
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/scripts/status_params.py
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/docs/_themes/pydoctheme/static/pydoctheme.css
+ambari-server/src/main/resources/ganglia_properties.json
+pom.xml
+ambari-metrics/ambari-metrics-hadoop-sink/src/main/java/org/apache/hadoop/metrics2/sink/timeline/TimelineMetricsCache.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/resources/metrics_def/NODEMANAGER.dat
+ambari-metrics/ambari-metrics-timelineservice/src/main/resources/metrics_def/MASTER_HBASE.dat
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/configuration/ams-hbase-log4j.xml
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/ApplicationHistoryClientService.java
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/util/TestRandomMetricsProvider.java
+ambari-server/src/test/java/org/apache/ambari/server/controller/ganglia/GangliaHelperTest.java
+ambari-server/src/test/java/org/apache/ambari/server/controller/ganglia/GangliaPropertyProviderTest.java
+ambari-server/src/test/java/org/apache/ambari/server/controller/metrics/ganglia/GangliaMetricTest.java
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/configuration/ams-log4j.xml
+ambari-metrics/ambari-metrics-timelineservice/src/main/conf/simulator-log4j.xml
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/configuration/ams-env.xml
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/DefaultPhoenixDataSource.java
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/timeline/TestGenericObjectMapper.java
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/templates/regionservers.j2
+ambari-metrics/ambari-metrics-host-monitoring/src/test/python/core/TestEmitter.py
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/Aggregator.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/_init_.py
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/MetricsProvider.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/arch/windows/process_info.h
+ambari-server/src/test/java/org/apache/ambari/server/controller/internal/StackDefinedPropertyProviderTest.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/resources/metrics_def/RESOURCEMANAGER.dat
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/scripts/ams.py
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/core/metric_collector.py
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_psutil_linux.c
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/scripts/hbase_master.py
+ambari-server/src/test/resources/ams/multiple_component_metrics.json
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/webapp/AppAttemptPage.java
+ambari-server/src/main/java/org/apache/ambari/server/controller/ganglia/GangliaHostPropertyProvider.java
+ambari-server/src/main/java/org/apache/ambari/server/controller/ganglia/GangliaHostProvider.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/HBaseTimelineMetricStore.java
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/templates/hbase_master_jaas.conf.j2
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/configuration/ams-hbase-policy.xml
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/ConnectionProvider.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_compat.py
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_pslinux.py
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/TestTimelineMetricStore.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/TimelineClusterMetric.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/assemblies/simulator.xml
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/records/ApplicationAttemptHistoryData.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/ApplicationHistoryManager.java
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/ganglia/GangliaMetric.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/conf/hbase-site-metrics-service.xml
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/net/TestRestMetricsSender.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/arch/windows/security.h
+ambari-metrics/ambari-metrics-hadoop-sink/src/main/assemblies/empty.xml
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/data/TestAppMetrics.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/TimelineMetricStore.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/Makefile
+ambari-metrics/ambari-metrics-timelineservice/src/main/assemblies/phoenix-components-major-client.xml
+ambari-metrics/ambari-metrics-timelineservice/src/main/resources/metrics_def/NAMENODE.dat
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/records/impl/pb/ApplicationFinishDataPBImpl.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/MetricAggregate.java
+ambari-server/src/main/java/org/apache/ambari/server/controller/ganglia/GangliaPropertyProvider.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/records/impl/pb/ApplicationStartDataPBImpl.java
+ambari-metrics/ambari-metrics-hadoop-sink/src/main/java/org/apache/hadoop/metrics2/sink/timeline/TimelineMetricsSink.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/net/MetricsSender.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/timeline/NameValuePair.java
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/scripts/metric_collector.py
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/timeline/TimelineStore.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/webapp/AHSView.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/webapp/TimelineWebServices.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/timeline/EntityIdentifier.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/core/controller.py
+ambari-server/src/main/resources/stacks/HDP/2.0.6/services/HBASE/package/templates/hadoop-metrics2-hbase.properties-GANGLIA-MASTER.j2
+ambari-metrics/ambari-metrics-hadoop-sink/src/main/assemblies/sink.xml
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/records/ApplicationStartData.java
+ambari-metrics/ambari-metrics-timelineservice/src/test/resources/lib/org/apache/phoenix/phoenix-core-tests/4.2.0/phoenix-core-tests-4.2.0.jar
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/core/host_info.py
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_psutil_common.h
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/examples/iotop.py
+ambari-server/src/test/java/org/apache/ambari/server/controller/utilities/PropertyHelperTest.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/resources/scripts/start_slaves.sh
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/scripts/hbase_regionserver.py
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/arch/windows/glpi.h
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/records/ApplicationFinishData.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/webapp/JAXBContextResolver.java
+ambari-metrics/ambari-metrics-timelineservice/conf/unix/ambari-metrics-collector
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/util/Json.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/TimelineMetricAggregator.java
+ambari-server/src/test/java/org/apache/ambari/server/controller/ganglia/GangliaReportPropertyProviderTest.java
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/ganglia/GangliaHostComponentPropertyProvider.java
+ambari-server/src/test/resources/ams/single_host_metric.json
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/data/ApplicationInstance.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/core/application_metric_map.py
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_init_.py
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/core/event_definition.py
+ambari-server/src/test/java/org/apache/ambari/server/controller/metrics/ganglia/GangliaReportPropertyProviderTest.java
+ambari-metrics/ambari-metrics-host-monitoring/src/test/python/core/TestMetricCollector.py
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/data/AppMetrics.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/assemblies/empty.xml
+ambari-metrics/ambari-metrics-timelineservice/src/main/resources/scripts/stop.sh
+ambari-server/src/main/java/org/apache/ambari/server/controller/ganglia/GangliaMetric.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/core/config_reader.py
+ambari-metrics/ambari-metrics-hadoop-sink/src/main/conf/hadoop-metrics2.properties.j2
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/AbstractTimelineAggregator.java
+ambari-metrics/ambari-metrics-hadoop-sink/src/main/java/org/apache/hadoop/metrics2/sink/timeline/TimelineMetrics.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/ApplicationHistoryReader.java
+ambari-metrics/ambari-metrics-timelineservice/src/test/resources/hbase-default.xml
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/arch/osx/process_info.c
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/examples/nettop.py
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/NullApplicationHistoryStore.java
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/metainfo.xml
+ambari-server/src/main/java/org/apache/hadoop/metrics2/sink/timeline/TimelineMetrics.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/data/HostMetricsGenerator.java
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/configuration/ams-site.xml
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/docs/_static/sidebar.js
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/net/UrlService.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/records/impl/pb/ContainerStartDataPBImpl.java
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/templates/hbase_grant_permissions.j2
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/ITMetricAggregator.java
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/scripts/ams_service.py
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/TestMemoryApplicationHistoryStore.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/net/RestMetricsSender.java
+ambari-metrics/ambari-metrics-host-monitoring/src/test/python/core/TestApplicationMetricMap.py
+ambari-server/src/main/resources/stacks/HDP/2.0.6/hooks/before-START/scripts/params.py
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/examples/top.py
+ambari-metrics/ambari-metrics-timelineservice/src/test/resources/lib/org/apache/phoenix/phoenix-core-tests/4.2.0/phoenix-core-tests-4.2.0.pom
+ambari-server/src/test/java/org/apache/ambari/server/controller/metrics/JMXPropertyProviderTest.java
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/files/hbaseSmokeVerify.sh
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_psutil_sunos.h
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/ApplicationHistoryStoreTestUtils.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/core/_init_.py
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/timeline/LeveldbTimelineStore.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_psutil_bsd.c
+ambari-server/src/main/java/org/apache/ambari/server/controller/ganglia/GangliaComponentPropertyProvider.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/package/rpm/preremove.sh
+ambari-metrics/ambari-metrics-timelineservice/pom.xml
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/MetricsLoadSimulator.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/examples/free.py
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/webapp/AppPage.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/records/ApplicationAttemptStartData.java
+ambari-metrics/ambari-metrics-hadoop-sink/src/main/conf/hadoop-metrics2-hbase.properties.j2
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/examples/meminfo.py
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/webapp/AHSLogsPage.java
+ambari-server/src/test/java/org/apache/ambari/server/controller/internal/AbstractPropertyProviderTest.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/MANIFEST.in
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/TestFileSystemApplicationHistoryStore.java
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/templates/hbase_client_jaas.conf.j2
+ambari-server/src/test/java/org/apache/ambari/server/controller/metrics/ganglia/GangliaPropertyProviderTest.java
+ambari-server/src/test/resources/ams/single_component_metrics.json
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/ITClusterAggregator.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/assemblies/phoenix-client.xml
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/util/RandomMetricsProvider.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/docs/_template/page.html
+ambari-metrics/ambari-metrics-timelineservice/src/test/conf/hbase-site.xml
+ambari-metrics/ambari-metrics-timelineservice/src/main/resources/scripts/ams_query.py
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_psutil_linux.h
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/TimelineMetricConfiguration.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/examples/pmap.py
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_psbsd.py
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/examples/disk_usage.py
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/examples/process_detail.py
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/templates/metric_monitor.ini.j2
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/webapp/ContainerPage.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/arch/windows/process_info.c
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/webapp/NavBlock.java
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/webapp/TestAHSWebApp.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_psosx.py
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/timeline/TimelineWriter.java
+ambari-metrics/ambari-metrics-timelineservice/conf/unix/ams-site.xml
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/records/impl/pb/ApplicationAttemptStartDataPBImpl.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/TimelineMetricAggregatorFactory.java
+ambari-server/src/main/java/org/apache/hadoop/metrics2/sink/timeline/TimelineMetric.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_common.py
+ambari-server/src/test/java/org/apache/ambari/server/controller/ganglia/GangliaMetricTest.java
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/scripts/hbase.py
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/TestMetricHostAggregate.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_psutil_common.c
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/docs/_themes/pydoctheme/theme.conf
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/examples/netstat.py
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/examples/killall.py
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/core/emitter.py
+ambari-server/src/main/java/org/apache/ambari/server/controller/metrics/MetricsPropertyProvider.java
+ambari-server/src/test/java/org/apache/ambari/server/controller/metrics/ganglia/TestStreamProvider.java
+ambari-metrics/pom.xml
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/arch/bsd/process_info.h
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/LoadRunner.java
+ambari-server/src/main/resources/stacks/HDP/2.2/services/HDFS/configuration/hadoop-env.xml
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/TestApplicationHistoryClientService.java
+ambari-server/src/test/java/org/apache/ambari/server/controller/metrics/RestMetricsPropertyProviderTest.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/loadsimulator/data/MetricsGeneratorConfigurer.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/webapp/AHSWebApp.java
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/templates/metric_groups.conf.j2
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/AbstractPhoenixConnectionlessTest.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/examples/who.py
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/setup.py
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/ApplicationHistoryWriter.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/docs/README
+ambari-server/src/main/resources/stacks/HDP/2.0.6/hooks/before-START/templates/hadoop-metrics2.properties.j2
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/metrics/timeline/TimelineMetricClusterAggregator.java
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/docs/_template/indexcontent.html
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/_psposix.py
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/FileSystemApplicationHistoryStore.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/records/ContainerStartData.java
+ambari-metrics/ambari-metrics-timelineservice/src/main/resources/scripts/start.sh
+ambari-metrics/ambari-metrics-host-monitoring/src/main/python/psutil/psutil/arch/windows/process_handles.h
+ambari-metrics/ambari-metrics-timelineservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/ApplicationHistoryStore.java
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/timeline/TestMemoryTimelineStore.java
+ambari-server/src/main/resources/stacks/HDP/2.2/services/AMS/package/scripts/functions.py
+AMBARI-5707. Replace Ganglia with high performant and pluggable Metrics System. Rat check fix. (swagle) (swagle: http://git-wip-us.apache.org/repos/asf?p=ambari.git&a=commit&h=93b8348fabb4a50e2ed95ed1b98fea7fff4b2ab1)
+ambari-server/src/main/java/org/apache/ambari/server/controller/internal/AbstractProviderModule.java
+pom.xml
+Permalink
+hudson Hudson added a comment - 11/Dec/14 21:15
+SUCCESS: Integrated in Ambari-trunk-Commit-docker #457 (See https://builds.apache.org/job/Ambari-trunk-Commit-docker/457/)
+AMBARI-5707. Replace Ganglia with high performant and pluggable Metrics System. Ignore bad unit test. (swagle) (swagle: http://git-wip-us.apache.org/repos/asf?p=ambari.git&a=commit&h=f5558eb8271076757a994be71211e71a70e2f885)
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/TestMemoryApplicationHistoryStore.java
+Permalink
+hudson Hudson added a comment - 11/Dec/14 21:39
+SUCCESS: Integrated in Ambari-trunk-Commit #1181 (See https://builds.apache.org/job/Ambari-trunk-Commit/1181/)
+AMBARI-5707. Replace Ganglia with high performant and pluggable Metrics System. Ignore bad unit test. (swagle) (swagle: http://git-wip-us.apache.org/repos/asf?p=ambari.git&a=commit&h=f5558eb8271076757a994be71211e71a70e2f885)
+ambari-metrics/ambari-metrics-timelineservice/src/test/java/org/apache/hadoop/yarn/server/applicationhistoryservice/TestMemoryApplicationHistoryStore.java
+Permalink
+rainysky lixiantao added a comment - 24/Jul/15 06:55
+I am new to this topic ,and I have seen Revised archtecture diagram.pnd , want to know how to deploy the OpenTSDB ? it is deployed for Metrcs System or the same one as bussiness OpenTSDB and HBase ?
+Permalink
+rainysky lixiantao added a comment - 24/Jul/15 06:55
+I am new to this topic ,and I have seen Revised archtecture diagram.pnd , want to know how to deploy the OpenTSDB ? it is deployed for Metrcs System or the same one as bussiness OpenTSDB and HBase ?
+Permalink
+rainysky lixiantao added a comment - 24/Jul/15 06:55
+I am new to this topic ,and I have seen Revised archtecture diagram.pnd , want to know how to deploy the OpenTSDB ? it is deployed for Metrcs System or the same one as bussiness OpenTSDB and HBase ?
+Permalink
+rainysky lixiantao added a comment - 24/Jul/15 06:55
+I am new to this topic ,and I have seen Revised archtecture diagram.pnd , want to know how to deploy the OpenTSDB ? it is deployed for Metrcs System or the same one as bussiness OpenTSDB and HBase ?
+People
+Assignee:	 swagle Siddharth Wagle
+Reporter:	 swagle Siddharth Wagle
+Votes:	4 Vote for this issue
+Watchers:	27 Start watching this issue
+Dates
+Created:	07/May/14 23:52
+Updated:	12/May/16 02:57
+Resolved:	17/Mar/15 19:17
+Agile
+View on Board
+Atlassian JIRA Project Management Software (v6.4.14#64029-sha1:ae256fe)  About JIRA  Report a problem
+Powered by a free Atlassian JIRA open source license for Apache Software Foundation. Try JIRA - bug tracking software for your team.
+Atlassian
+
+Ambari enables System Administrators to:
+
+Provision a Hadoop Cluster
+Ambari provides a step-by-step wizard for installing Hadoop services across any number of hosts.
+Ambari handles configuration of Hadoop services for the cluster.
+Manage a Hadoop Cluster
+Ambari provides central management for starting, stopping, and reconfiguring Hadoop services across the entire cluster.
+Monitor a Hadoop Cluster
+Ambari provides a dashboard for monitoring health and status of the Hadoop cluster.
+Ambari leverages Ambari Metrics System for metrics collection.
+Ambari leverages Ambari Alert Framework for system alerting and will notify you when your attention is needed (e.g., a node goes down, remaining disk space is low, etc).
+Ambari enables Application Developers and System Integrators to:
+
+Easily integrate Hadoop provisioning, management, and monitoring capabilities to their own applications with the Ambari REST APIs.
+Getting Started with Ambari
+Follow the installation guide for Ambari 2.5.2.
+
+Note: Ambari currently supports the 64-bit version of the following Operating Systems:
+
+RHEL (Redhat Enterprise Linux) 6 and 7
+CentOS 6 and 7
+OEL (Oracle Enterprise Linux) 6 and 7
+SLES (SuSE Linux Enterprise Server) 11
+Ubuntu 12 and 14
+Debian 7
+Get Involved
+Visit the Ambari Wiki for design documents, roadmap, development guidelines, etc.
+
+Join the Ambari User Meetup Group. You can see the slides from April 2, 2013, June 25, 2013, and September 25, 2013 meetups.
+
+What's New?
+Check out the work going on for the upcoming releases.
+
+Copyright © 2017 Apache Software Foundation. All Rights Reserved. Apache Ambari, Apache, the Apache feather logo, and the Apache Ambari project logos are trademarks of The Apache Software Foundation. All other marks mentioned may be trademarks or registered trademarks of their respective owners.Privacy Policy
+
+March 2009 - ApacheCon EU
+In case you missed it.... ApacheCon Europe 2009
+
+November 2008 - ApacheCon US
+In case you missed it.... ApacheCon US 2008
+
+July 2008 - Hadoop Wins Terabyte Sort Benchmark
+Hadoop Wins Terabyte Sort Benchmark: One of Yahoo's Hadoop clusters sorted 1 terabyte of data in 209 seconds, which beat the previous record of 297 seconds in the annual general purpose (Daytona) terabyte sort benchmark. This is the first time that either a Java or an open source program has won.
+
+
+Last Published: 10/28/2017 06:03:27
+Copyright © 2014 The Apache Software Foundation.
+Apache Hadoop, Hadoop, Apache, the Apache feather logo, and the Apache Hadoop project logo are either registered trademarks or trademarks of the Apache Software Foundation in the United States and other countries.
